@@ -22,3 +22,13 @@ int main() {
     for (int i = 0; i < n; ++i) {
         colors.push_back(Color{ rgb(gen), rgb(gen), rgb(gen) }); //this is where we actually put the colors in the vector
     }
+
+     // Pretty table timeeeee
+    const int Wlabel = 8, Wnum = 8; //W is for width
+
+    cout << left  << setw(Wlabel) << "Color#"
+         << right << setw(Wnum)   << "R value"
+         << right << setw(Wnum)   << "G value"
+         << right << setw(Wnum)   << "B value" << '\n';
+
+    cout << string(Wlabel + 3 * Wnum, '-') << '\n';
