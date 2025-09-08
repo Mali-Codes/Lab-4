@@ -32,3 +32,13 @@ int main() {
          << right << setw(Wnum)   << "B value" << '\n';
 
     cout << string(Wlabel + 3 * Wnum, '-') << '\n';
+
+    for (int i = 0; i < n; ++i) { // loop to print each color in the table
+        cout << left  << setw(Wlabel) << (i + 1)
+             << right << setw(Wnum)   << colors[i].r
+             << right << setw(Wnum)   << colors[i].g
+             << right << setw(Wnum)   << colors[i].b << '\n';
+    }
+    return 0;
+
+}
